@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+*{
+    font-family:'Rubik', sans-serif;
+    margin:0;
+    padding:0; box-sizing: border-box; outline: none; border:none; text-decoration: none; transition: .2s linear; text-transform: capitalize;
+}
+:root{
+ --green:#00E77F;
+ --white:#fff;
+ --light-white:#aaa;
+ --black:#3d3d3d;
+  --light-bg:#4b4b4b;
+
+}
+*::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:7rem;
+}
+::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color:transparent;
+}
+::-webkit-scrollbar-thumb{
+background-color: var(--green);
+border-radius: 5rem;
+}
+body{
+    background-color: var(--black);
+}
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:2rem;
+}
+.header{
+    position: fixed;
+    top:0; left:0; right: 0;z-index: 1000;
+    background-color: green;
+}
+.header .flex{
+    position: relative;
+    display: flex; align-items: center; justify-content: space-between;  
+}
+.header .flex.logo{
+    font-size:2.5rem;
+    color:var(--white);
+}
+.header.flex.navbar a{
+    margin-left:2rem;
+    color:var(--light--white0);
+    font-size:2rem;
+}
+.header.flex.navbar a:hover{
+    color:var(--green);
+}
+#menu-btn{
+    cursor: pointer
+    color;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive onlive Education </title>   
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <hearder class="header">
+        <section class="flex">
+            <a href="#home" class="logo">educa.</a>
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#courses">courses</a>
+                <a href="#reviews">reviews</a>
+                <a href="#contact">contact</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </hearder>
+ <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
